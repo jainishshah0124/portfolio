@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/src/assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jainish Shah Portfolio</title>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Call the updateCounter function once the page is loaded
+        const url = "https://portfolio-13428-default-rtdb.firebaseio.com/count.json";
+
+    // Function to update the counter value
+    function updateCounter() {
+        // Fetch current counter value
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to retrieve counter. Status code: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(currentCounter => {
+                // Modify the data (e.g., increment by 1)
+                const updatedCounter = currentCounter + 1;
+                console.log('Counter : ' + updatedCounter);
+                // Update the counter value in the database
+                return fetch(url, {
+                    method: 'PUT', // or 'PATCH' depending on your Firebase rules
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(updatedCounter),
+                });
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to update counter. Status code: ${response.status}`);
+                }
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    }
+        updateCounter();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
