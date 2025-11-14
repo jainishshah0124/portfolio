@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close,resume } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -61,8 +61,8 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
-          <li className={`text-secondary hover:text-white text-[18px] font-medium cursor-pointer`}>
-              <a href='https://drive.google.com/file/d/1OZzhmqhA0us92R5zrsZi32Wbsakqxn_v/view?usp=sharing'>Resume</a>
+          <li className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'>
+              <a href={resume} target='_blank' rel='noopener noreferrer'>Resume</a>
           </li>
         </ul>
 
@@ -94,8 +94,8 @@ const Navbar = () => {
                   
                 </li>
               ))}
-              <li className={`font-poppins font-medium cursor-pointer text-[16px] text-secondary`}>
-              <a href='../assets/Jainish_Shah_Resume.pdf'>Resume</a>
+              <li className='font-poppins font-medium cursor-pointer text-[16px] text-secondary'>
+              <a href={resume} target='_blank' rel='noopener noreferrer'>Resume</a>
             </li>
             </ul>
           </div>

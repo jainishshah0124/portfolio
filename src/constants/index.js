@@ -29,7 +29,7 @@ import {
   resume,
   amol,
   bhawar,
-  jasmeet,CSUF,
+  jasmeet,CSUF,wellgorithm
 } from "../assets";
 
 export const navLinks = [
@@ -57,20 +57,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Java Developer",
-    icon: web,
+    title: "Mobile Development",
+    icon: mobile,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "iOS",
+    title: "AI/ML",
     icon: creator,
   },
   {
     title: "React Native Developer",
-    icon: mobile,
+    icon: web,
   },
 ];
 
@@ -137,9 +137,10 @@ const experiences = [
     company_name: "California State University Fullerton",
     icon: CSUF,
     iconBg: "#383E56",
-    date: " August 2024 - Present",
+    date: " August 2024 - May 2025",
     points: [
-      " Instructing CPSC 449 Web Backend Engineering to a group of 40 students. My responsibilities encompass delivering lectures, grading assignments, and resolving students' doubts.",
+      "Improved student proficiency in backend and AI application development by teaching Python, Flask, REST APIs, and machine learning fundamentals.",
+      "Mentored 40+ students on Agentic AI workflows, prompt engineering, and integrating AI/LLM tools such as LangChain and OpenAI APIs into full-stack systems."
     ],
   },
   {
@@ -149,8 +150,12 @@ const experiences = [
     iconBg: "#383E56",
     date: " October 2019 - August 2023",
     points: [
-      " Spearheaded a 7-member team, accelerating release stabilization, eliminating critical defects, and optimizing CI/CD to deliver 9 days ahead of schedule.",
-      " Orchestrated development, enhancements, and issue resolution for four major banking projects, demonstrating expertise in financial domains through strategic client engagement.",
+      "Enhanced app modularity and performance by migrating enterprise banking apps from MVC → MVVM using Kotlin, Jetpack  Compose, and Material Design",
+      "Developed light ML-driven reporting utilities with Python & Scikit-learn to enhance operational intelligence and automate recurring analytics workflows",
+      "Improved performance with Retrofit + Coroutines for networking and Room for offline persistence across multi-module builds",
+      "Strengthened reliability via JUnit/Espresso automation and CI/CD (Jenkins), reducing production defects and release rollbacks",
+      "Collaborated with data, AI, and product teams to align model outputs with business metrics for improved decision automation",
+      "Led a 7-member AMC team resolving 500+ post-Go-Live issues during COVID, earning a GEM Award among 200+ developers for data-driven stability",
     ],
   },
   {
@@ -160,8 +165,10 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: " August 2018 - September 2019",
     points: [
-      "Showcased proficiency in both independent and collaborative work environments, contributing to team success and achieving a 20% increase in productivity through effective communication and optimized processes.",
-      "Collaborated with 3 SMEs (Testing, BA, DevOps) to ensure smooth product integration, significantly contributing to project success.",
+      "Built scalable components using Java, Spring Boot, REST APIs, and JDBC/Hibernate, improving response times by 20%.",
+      "Designed automation scripts and ML-assisted reporting utilities in Python and Scikit-learn to enhance operational intelligence.",
+      "Implemented Selenium + JUnit testing and Jenkins pipelines, cutting manual QA effort by 40% and increasing release reliability.",
+      "Collaborated with cross-functional teams to integrate predictive data modules and support early adoption of dashboards.",
     ],
   },
   {
@@ -171,8 +178,10 @@ const experiences = [
     iconBg: "#383E56",
     date: " July 2017 - May 2018",
     points: [
-      " Developed an iOS E-Comm app using Swift and UIKit, integrating StoreKit for secure in-app purchases and Core Data (NSPersistentContainer) for inventory management, boosting simulated sales by 40%.",
-         " Implemented RESTful API communication with URLSession and Alamofire, optimizing Core Data batch updates and reducing inventory discrepancies by 25%.",
+      "Built native Android applications using Kotlin, XML, and Android Studio, ensuring seamless UX across multiple device types.",
+      "Delivered authentication, push notifications, and offline caching modules, improving reliability by 30% across releases.",
+      "Integrated Firebase (Realtime DB, Analytics, Crashlytics) to capture usage metrics and optimize stability.",
+      "Optimized network calls with Retrofit and OkHttp, reducing API latency by 25% and supporting early data-driven insights.",
     ],
   },
 ];
@@ -180,11 +189,11 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Jainish consistently applied a scientific mindset to problem-solving, addressing issues at their core. Proficient in Java, JSP, JS, Oracle SQL, and PLSQL, he showcased leadership and mentorship skills at Intellect Design Arena, contributing to the development of a robust team.",
-    name: "Amol Garve",
-    designation: "AVP",
+      "He is attentive , focussed and precision obsessed. Always takes end to end ownership and leads from the front.",
+    name: "Bhawar Ramteke",
+    designation: "Senior Project Manager",
     company: "Intellect Design Arena Ltd.",
-    image: amol,
+    image: bhawar,
   },
   {
     testimonial:
@@ -196,11 +205,11 @@ const testimonials = [
   },
   {
     testimonial:
-      "He is attentive , focussed and precision obsessed. Always takes end to end ownership and leads from the front.",
-    name: "Bhawar Ramteke",
-    designation: "Senior Project Manager",
+      "Jainish consistently applied a scientific mindset to problem-solving, addressing issues at their core. Proficient in Java, JSP, JS, Oracle SQL, and PLSQL, he showcased leadership and mentorship skills at Intellect Design Arena, contributing to the development of a robust team.",
+    name: "Amol Garve",
+    designation: "AVP",
     company: "Intellect Design Arena Ltd.",
-    image: bhawar,
+    image: amol,
   },
 ];
 
@@ -225,7 +234,33 @@ const projects = [
     ],
     image: attendance,
     source_code_link: "https://github.com/jainishshah0124/Crime_Classification",
-  },{
+  },
+  {
+    name: "Wellgorithm",
+    description:
+      "Built an Agentic AI–powered healthcare platform that processed 300+ medical reports for users through a multi-model architecture, integrating autonomous reasoning, secure authentication, in-context learning, and 20MB PDF parsing for accurate clinical data extraction and analysis.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Groq",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Llama-3",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: wellgorithm,
+    source_code_link: "https://github.com/jainishshah0124/Wellgorithm",
+  },
+  {
     name: "Crime Classification",
     description:
       "Creating a crime categorization system to automate the assignment of officers, optimizing law enforcement resource allocation. Utilized PySpark for feature extraction and diverse supervised machine learning algorithms to tackle the multi-class text classification challenge.",

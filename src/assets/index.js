@@ -6,10 +6,11 @@ import web from "./web.png";
 import jainish_shah from "./Jainish_Shah.jpg";
 import github from "./github.png";
 import youtube from "./youtube.png";
+import browser from "./browser.png"
 import document from "./document.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import resume from "../assets/Jainish_Shah_Resume.pdf";
+import resume from "./Jainish_Resume.pdf";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -39,6 +40,7 @@ import online from "../assets/online.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import wellgorithm from "./Wellgorithm.png";
 import attendance from "./Attendance_tracker.png";
 import amol from "./amol.png";
 import bhawar from "./bhawar.png";
@@ -49,6 +51,7 @@ export {
   resume,
   online,
   java,
+  browser,
   DB,
   backend,
   creator,
@@ -84,5 +87,6 @@ export {
   amol,
   bhawar,
   jasmeet,
-  CSUF
+  CSUF,
+  wellgorithm
 };
