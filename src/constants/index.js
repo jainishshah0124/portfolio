@@ -57,12 +57,12 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Mobile Development",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "Full Stack Development",
+    icon: mobile,
   },
   {
     title: "AI/ML",
@@ -139,8 +139,9 @@ const experiences = [
     iconBg: "#383E56",
     date: " August 2024 - May 2025",
     points: [
-      "Improved student proficiency in backend and AI application development by teaching Python, Flask, REST APIs, and machine learning fundamentals.",
-      "Mentored 40+ students on Agentic AI workflows, prompt engineering, and integrating AI/LLM tools such as LangChain and OpenAI APIs into full-stack systems."
+      "Taught core backend development concepts, including REST APIs, relational databases, and server-side application design.",
+      "Guided 40+ students in applying OOP principles, data structures, and clean coding practices across multiple assignments.",
+      "Assisted students in debugging application logic, SQL queries, and API integrations in an Agile-style workflow",
     ],
   },
   {
@@ -150,12 +151,18 @@ const experiences = [
     iconBg: "#383E56",
     date: " October 2019 - August 2023",
     points: [
-      "Enhanced app modularity and performance by migrating enterprise banking apps from MVC → MVVM using Kotlin, Jetpack  Compose, and Material Design",
-      "Developed light ML-driven reporting utilities with Python & Scikit-learn to enhance operational intelligence and automate recurring analytics workflows",
-      "Improved performance with Retrofit + Coroutines for networking and Room for offline persistence across multi-module builds",
-      "Strengthened reliability via JUnit/Espresso automation and CI/CD (Jenkins), reducing production defects and release rollbacks",
-      "Collaborated with data, AI, and product teams to align model outputs with business metrics for improved decision automation",
-      "Led a 7-member AMC team resolving 500+ post-Go-Live issues during COVID, earning a GEM Award among 200+ developers for data-driven stability",
+      "Developed and maintained 12+ backend microservices using Java 8, Spring Boot, JDBC, and REST APIs, supporting enterprise banking workflows across 3+ business modules with secure authentication and role-based access controls.",
+
+      "Implemented scalable data access layers using JDBC and Hibernate, integrating Oracle and MySQL, and handling 2M+ records across transactional and reference datasets while ensuring high availability and consistent response times.",
+
+      "Created 250+ unit and integration test cases using JUnit, strengthening release stability and preventing recurring regressions across monthly production deployments through structured test suites and CI validation runs.",
+
+      "Partnered with QA and product teams to triage 40+ defects per release cycle, performing root cause analysis and delivering hotfixes within 24–72 hours to ensure uninterrupted services for critical banking operations.",
+      "Participated in 80+ sprint ceremonies, including planning, grooming, code reviews, and architecture discussions, improving delivery predictability for Agile scrum teams while mentoring juniors and aligning technical priorities daily.",
+
+      "Built Python utilities (6+ scripts) for log analytics and anomaly detection, scanning 10K+ daily log lines to flag runtime failures and performance spikes using scheduled runs and standardized alerting formats.",
+      "Developed and optimized 30+ SQL queries and 15+ PL/SQL stored procedures in Oracle to support transaction processing,reconciliation, and audit-ready reporting with optimized indexing and performance-tuned execution plans.",
+      
     ],
   },
   {
@@ -163,25 +170,28 @@ const experiences = [
     company_name: "Intellect Design Arena",
     icon: IDA,
     iconBg: "#FFFFFF",
-    date: " August 2018 - September 2019",
+    date: " August 2018 - October 2019",
     points: [
-      "Built scalable components using Java, Spring Boot, REST APIs, and JDBC/Hibernate, improving response times by 20%.",
-      "Designed automation scripts and ML-assisted reporting utilities in Python and Scikit-learn to enhance operational intelligence.",
-      "Implemented Selenium + JUnit testing and Jenkins pipelines, cutting manual QA effort by 40% and increasing release reliability.",
-      "Collaborated with cross-functional teams to integrate predictive data modules and support early adoption of dashboards.",
+      "Developed 6+ backend modules using Java, Spring (MVC/Boot), and JDBC in a layered architecture, supporting transaction workflows.",
+
+      "Optimized 25+ SQL queries and 10+ stored procedures to process 1,000+ daily transactions with audit tracking.",
+
+      "Collaborated with cross-functional teams in Agile sprints to deliver features on time and enhance application performance.",
+      "Fixed 15+ production defects by debugging logs and resolving SQL/JDBC issues with QA, closing tickets in under 2 days.",
+      "Deployed builds on Tomcat and managed 20+ Maven builds via CI pipelines, ensuring consistent deployments across DEV/UAT .",
+      "Leveraged AWS services (S3, EC2) to store build artifacts/logs and support application deployment testing across environments.",
     ],
   },
   {
-    title: "iOS Developer Intern",
-    company_name: "Narayankrupa Tenstones Pvt. Ltd",
+    title: "Software Engineer Intern",
+    company_name: "Adani",
     icon: meta,
     iconBg: "#383E56",
     date: " July 2017 - May 2018",
     points: [
-      "Built native Android applications using Kotlin, XML, and Android Studio, ensuring seamless UX across multiple device types.",
-      "Delivered authentication, push notifications, and offline caching modules, improving reliability by 30% across releases.",
-      "Integrated Firebase (Realtime DB, Analytics, Crashlytics) to capture usage metrics and optimize stability.",
-      "Optimized network calls with Retrofit and OkHttp, reducing API latency by 25% and supporting early data-driven insights.",
+      "Assisted in developing 3+ internal web components using JavaScript and React, improving usability for 15+ daily users.",
+      "Optimized 10+ SQL queries to support data extraction and validation, helping generate weekly reports for 2+ stakeholders.",
+      "Supported closing 12+ bugs/tickets by reproducing issues, debugging logs, and coordinating fixes with senior engineers.",
     ],
   },
 ];
