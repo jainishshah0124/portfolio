@@ -40,7 +40,7 @@ const Contact = () => {
           to_name: "Jainish Shah",
           from_email: form.email,
           to_email: "jainishshah0124@gmail.com",
-          message: form.message,
+          message: "Message: " + form.message + "\n From: " + form.email,
         },
         "hwGK9ZcYfupOAPyjM"
       )
@@ -76,6 +76,7 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
+          action="https://formspree.io/f/xzddanqy"
           ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
